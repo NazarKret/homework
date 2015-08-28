@@ -1,0 +1,260 @@
+@font-face {
+	font-family: colossalis;
+	src: url('Colossalis Bold.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: colossalis, Impact, sans-serif;
+	color: orange;
+}
+
+body {
+	color: grey;
+	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.heading {
+	font-size: 25px;
+	padding-bottom: 12px;
+	margin-top: 80px;
+}
+
+/****************************************** LOGO ********************************************/
+.logo {
+	float: left;
+}
+
+.logo h2 {
+	display: inline-block;
+	font-size: 3em;
+	padding-right: 5px;
+	margin-top: 13px;
+}
+
+.logo h3 {
+	display: inline-block;
+	font: 1.5em "Trebuchet MS", Tahoma, Arial, sans-serif;
+	color: grey;
+	border-left: 2px solid grey;
+	padding-left: 9px;
+	position: relative;
+	top: -.3em;
+}
+
+/***************************************** SOCIAL ********************************************/
+.social {
+	float: right;
+	text-align: center;
+}
+
+.social ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.social ul li {
+	display: inline-block;
+	margin-left: 7px;
+}
+
+.social a i {
+	font-size: 2.5em;
+	color: grey;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
+}
+
+.social a:hover i.fa-facebook-square {
+	color: #0a03fc;
+}
+
+.social a:hover i.fa-twitter-square {
+	color: #049efb;
+}
+
+.social a:hover i.fa-google-plus-square {
+	color: #8006f9;
+}
+
+.social a:hover i.fa-youtube-square {
+	color: #f50a21;
+}
+
+.social p {
+	font-size: 16px;
+	margin: 10px 0 5px 5px;
+}
+
+/******************************************* NAVIGATION *******************************************/
+nav {
+	border: 1px solid #d5d6d3;
+	width: 958px;
+	height: 50px;
+}
+
+.main-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-nav > li {
+	position: relative;
+	width: 125px;
+	height: 50px;
+	float: left;
+	border-right: 1px solid #d5d6d3;
+}
+
+.main-nav > li > a {
+	text-decoration: none;
+	color: grey;
+	position: absolute;
+	width: 125px;
+	height: 36px;
+	text-align: center;
+	padding-top: 14px;
+	font-size: 17px;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+}
+
+.main-nav > li > a:hover {
+	background-color: #efefef;
+}
+
+.search {
+	float: right;
+	margin: 14px 12px 0 0;
+	color: grey;
+}
+
+.search input {
+	border: 1px solid #d5d6d3;
+	background-color: #efefef;
+	border-radius: 30px;
+	padding-left: 10px;
+}
+
+.search a {
+	color: grey;
+}
+/**************************************** DROPDOWN ****************************************/
+.dropdown {
+	display: none;
+	list-style-type: none;
+	padding-left: 0;
+	position: relative;
+	top: 50px;
+}
+
+.dropdown li {
+	position: relative;
+	width: 125px;
+	height: 50px;
+	background-color: #fafafa;
+}
+
+.dropdown li a {
+	text-decoration: none;
+	color: grey;
+	position: absolute;
+	width: 118px;
+	height: 36px;
+	padding: 14px 0 0 7px;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-o-transition: background-color .5s;
+}
+
+.dropdown li a:hover {
+	background-color: #efefef;
+}
+
+/************************************* COLUMN-ONE, COLUMN-TWO ***********************************/
+.column-one, .column-two {
+	margin-right: 24px;
+	padding: 0;
+	float: left;
+}
+
+.column-one {
+	width: 632px;
+}
+
+.column-two {
+	width: 280px;
+}
+
+.column-one:last-child, .column-one:last-child {
+	margin-right: 0;
+}
+
+/********************************************* FOOTER *******************************************/
+footer {
+	background-color: #8b8b8f;
+	color: white;
+}
+
+footer h3 {
+	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+.footer-row {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.column-four {
+	float: left;
+}
+
+.column-five {
+	float: left;
+	margin-left: 65px;
+}
+
+.thumbnails {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.thumbnails li {
+	float: left;
+	margin-right: 8px;
+	width: 90px;
+	height: 90px;
+}
+
+.thumbnails li img {
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 1px;
+}
+
+.copyright {
+	border-top: 1px solid white;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 7px 0;
+	font-size: 14px;
+}

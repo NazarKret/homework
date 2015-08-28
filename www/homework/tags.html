@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 1</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div style="text-align: center">
+ <h3>Icons creation tutorial</h3>
+ <video width="800" height="450" controls="controls">
+   <source src="../videos/FlatTIconDes-01.mp4">
+   <source src="../videos/FlatTIconDes-01.mp4" type="video/mp4">
+ </video>
+</div>
+<br />
+
+<div style="text-align: center">
+ <h3>Soundtrack audio</h3>
+ <audio controls>
+  <source src="../audio/Metal_Gear_Rising_Revengeance_Ost-Title_(mp3.cc).mp3" type="audio/ogg">
+  <source src="../audio/Metal_Gear_Rising_Revengeance_Ost-Title_(mp3.cc).mp3" type="audio/mpeg">
+ </audio>
+</div>
+<br />
+
+<div style="text-align: center">
+  <h3>English Premier League Champions</h3> 	
+   <p><time>1957-05-04</time> Chelsea FC</p>
+   <p><time>1960-05-19</time> Arsenal</p>
+   <p><time>1961-05-12</time> Arsenal</p>
+   <p><time>1963-05-16</time> Man Utd</p>
+   <p><time>1969-05-21</time> Man City</p>
+</div>
+<br />
+
+<div style="text-align: center">
+  <h3>Flowers images</h3> 	
+   <figure>
+    <p><img src="../images/blossoms.jpg" width="420" height="281" alt="flower_image_1"/></p>
+    <figcaption>Flowers image number 1</figcaption>
+   </figure>
+   
+   <figure>
+    <p><img src="../images/flowers.jpg" width="420" height="281" alt="flower_image_2"/></p>
+    <figcaption>Flowers image number 2</figcaption>
+   </figure>
+</div>
+<br />
+
+<div style="text-align: center">
+<h3>Canvas</h3>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"yellow");
+ctx.fillStyle = grd;
+ctx.fillRect(5,5,200,100);
+</script>
+</div>
+
+</body>
+</html>

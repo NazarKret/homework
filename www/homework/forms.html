@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 2</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<form action="script.php" method="post">
+<h3 style="text-align: center">Fill down the form below to collect all information</h3>
+Your name: <input type="text" placeholder="FirstName" name="FirstName"/>
+<br />
+<br />
+
+Your surname: <input type="text" placeholder="LastName" name="LastName"/>
+<br />
+<br />
+
+Password: <input type="password" name="password"/>	
+<br />
+<br />
+
+What is your sex type?
+<input type="radio" name="sex" value="male" checked> Male
+<input type="radio" name="sex" value="female"> Female
+<br />
+<br />
+
+If you have any claims, please leave your comments below
+<br />
+<textarea name="message" rows="15" cols="50"></textarea>
+<br />
+<br />
+
+Choose your favourite PC games type: 
+<select name="games">
+	<option value="Action">Action</option>
+	<option value="RPG">RPG</option>
+	<option value="Strategy">Strategy</option>
+	<option value="Simulators">Simulators</option>
+</select>
+<br />
+<br />
+
+What is your favourite movie type?<br />
+<input type="checkbox" name="game1" value="action"> I prefer action movies.<br />
+<input type="checkbox" name="game2" value="horror"> I prefer horror movies.<br />
+<input type="checkbox" name="game3" value="funny"> I prefer funny movies.<br />
+<input type="checkbox" name="game4" value="dynamic"> I prefer dynamic movies.
+<br />
+<br />
+
+<input type="submit" value="Send!"/>
+</form>
+</body>
+</html>

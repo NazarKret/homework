@@ -1,0 +1,54 @@
+/******************************************* MAIN *********************************************/
+@font-face {
+	font-family: colossalis;
+	src: url('Colossalis Bold.ttf');
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	border-top: 10px solid orange;
+	background: url('../../images/autumn.jpg') fixed no-repeat;
+}
+
+h3 {
+	font: 2em colossalis;
+	color: red;
+}
+
+/*************************************** COLUMN-ONE *********************************************/
+.column-one h3 {
+	text-align: center;
+}
+
+.column-one ul {
+	list-style-type: circle;
+	padding-left: 0;
+}
+
+.column-one li {
+	margin: 10px 0 0 16px;
+}
+
+/********************************* COLUMN-TWO, COLUMN-THREE *************************************/
+.column-two, .column-three {
+	margin-right: 24px;
+	padding: 0;
+	float: left;
+}
+
+.column-two p, .column-three p {
+	text-indent: 15px;
+}
+
+.column-two {
+	width: 632px;
+}
+
+.column-three {
+	width: 304px;
+}
+
+.column-three:last-child {
+	margin-right: 0;
+}
