@@ -181,28 +181,27 @@ nav {
 	background-color: #efefef;
 }
 
-/********************************************* ABOUT US *******************************************/
+/********************************************* FORM *******************************************/
 .column-one h3 {
 	font-size: 25px;
 	margin-bottom: 10px;
 	padding-top: 20px;
 }
 
-.column-two p {
-	text-indent: 20px;
-	text-align: justify;
-	line-height: 20px;
+.column-two {
+	margin-bottom: 25px;
 }
 
-.row {
-	margin-bottom: 55px;
+.column-two p {
+	padding-left: 25px;
+	margin: 25px 0;
 }
 
 /******************************************** FOOTER **********************************************/
 footer {
-	border-top: 8px solid orange;
 	background-color: #8b8b8f;
 	color: white;
+	border-top: 8px solid orange;
 }
 
 footer h3 {

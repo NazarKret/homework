@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	color: grey;
 	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+	border-top: 8px solid orange;
 }
 
 .container {
@@ -20,12 +21,6 @@ body {
 
 .clear {
 	clear: both;
-}
-
-.heading {
-	font-size: 25px;
-	padding-bottom: 12px;
-	margin-top: 80px;
 }
 
 /****************************************** LOGO ********************************************/
@@ -186,33 +181,62 @@ nav {
 	background-color: #efefef;
 }
 
+/********************************************* WEATHER ******************************************/
+
 /************************************* COLUMN-ONE, COLUMN-TWO ***********************************/
 .column-one, .column-two {
-	margin-right: 24px;
+	margin-right: 38px;
 	padding: 0;
 	float: left;
 }
 
 .column-one {
-	width: 632px;
+	width: 622px;
+}
+
+.column-one p {
+	text-indent: 20px;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.column-one h3 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	padding-top: 20px;
 }
 
 .column-two {
-	width: 280px;
+	width: 300px;
 }
 
-.column-one:last-child, .column-one:last-child {
+.column-two p {
+	text-indent: 20px;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.column-two h3 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+.column-two:last-child {
 	margin-right: 0;
 }
 
 /********************************************* FOOTER *******************************************/
 footer {
+	border-top: 8px solid orange;
 	background-color: #8b8b8f;
 	color: white;
 }
 
 footer h3 {
 	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+	color: #f7da8e;
+	font-size: 25px;
 }
 
 .footer-row {
@@ -222,6 +246,12 @@ footer h3 {
 
 .column-four {
 	float: left;
+	margin-bottom: 25px;
+}
+
+.column-four p {
+	margin: 0;
+	line-height: 27px;
 }
 
 .column-five {

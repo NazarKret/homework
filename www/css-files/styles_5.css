@@ -181,21 +181,21 @@ nav {
 	background-color: #efefef;
 }
 
-/********************************************* ABOUT US *******************************************/
+/********************************************* IMAGES *******************************************/
 .column-one h3 {
 	font-size: 25px;
-	margin-bottom: 10px;
-	padding-top: 20px;
+	margin-top: 50px;
 }
 
-.column-two p {
-	text-indent: 20px;
-	text-align: justify;
-	line-height: 20px;
+.column-two ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 30px;
 }
 
-.row {
-	margin-bottom: 55px;
+.column-two li {
+	margin: 0 40px 10px 0;
+	float: left;
 }
 
 /******************************************** FOOTER **********************************************/

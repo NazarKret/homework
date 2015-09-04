@@ -26,4 +26,9 @@ $(".thumbnails li img").hover(
 	}
 );
 
+//************************************** VIDEOS *********************************************\\
+$(".column-two h2").click(function(e){
+	$(this).next().slideToggle();
+});
+	
 });

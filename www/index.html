@@ -9,9 +9,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
 	<script src="js-files/jquery-1.11.3.min.js"></script>
 	<script src="js-files/site.js"></script>
+	<script src="js-files/my_scripts.js"></script>
 </head>
 <body>
-<div class="container">
+  <div class="container">
 <header>
   <div class="logo">
   	<h2>WU</h2>
@@ -19,7 +20,7 @@
   </div>
   
   <div class="social">
-  <p>Join the conversation</p>
+  <p>Social networks</p>
   	<ul>
   	  <li><a href="https://uk-ua.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
   	  <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -31,15 +32,13 @@
   <nav class="clear">
   	<ul class="main-nav">
   	  <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-  	  <li><a href="#"><i class="fa fa-archive"></i> Services</a>
+  	  <li><a href="#"><i class="fa fa-archive"></i> Archive</a>
   	  	<ul class="dropdown">
-  	  	  <li><a href="#"><i class="fa fa-television"></i> Videos</a></li>	
-  	  	  <li><a href="#"><i class="fa fa-music"></i> Music</a></li>	
-  	  	  <li><a href="#"><i class="fa fa-graduation-cap"></i> Education</a></li>	
-  	  	  <li><a href="#"><i class="fa fa-key"></i> Security</a></li>
+   	  	  <li><a href="videos.html"><i class="fa fa-television"></i> Videos</a></li>	
+  	  	  <li><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>	
   	  	</ul>
   	  </li>
-  	  <li><a href="#"><i class="fa fa-hand-o-right"></i> Join</a></li>
+  	  <li><a href="log.html"><i class="fa fa-hand-o-right"></i> Join</a></li>
   	  <li><a href="about_us.html"><i class="fa fa-users"></i> About us</a></li>
   	</ul>
   	
@@ -48,30 +47,80 @@
   	</form>
   </nav>
 </header>
+
+<section class="row_1">
+  <div class="column-one">
+  	<ul id="weather_Lviv"></ul>
+  	  
+  </div>
 	
-<div class="row_1">
- <div class="column-one">
- <h3>Latest news</h3>
-   <p>Around midnight on September 22,1989, Hurricane Hugo roared ashore just north of Charleston, S.C. as a massive Category 4 storm with winds near 140 mph and a storm tide around 20 feet. The hurricane leveled beachfront properties and toppled trees, leaving much of the coastal areas in absolute ruin.</p>
-   <p>Hugo remained strong as it moved into western North Carolina, producing hurricane-force wind gusts all the way to Charlotte. Thirteen people in South Carolina and one person in North Carolina died as a result of the storm (as well as six in Virginia and one in New York). Hurricane Hugo caused 7 billion in damage in the U.S. mainland, making it the costliest hurricane at the time. When adjusted for inflation, it currently ranks as the ninth most costly hurricane in U.S. history, causing almost 13 billion in damage.</p>
-   <p>To commemorate this historic storm, the National Weather Service Forecast Office in Charleston, S.C. created a website which features a video series that looks back at what it was like before, during and after the storm, as well as a look at the future of hurricane forecasting and forecast communication challenges. The videos include interviews with local officials, media, National Hurricane Center meteorologists and the director of the National Weather Service, Louis Uccellini. In addition, there is an interactive map developed by Coastal Services Center that shows the storm’s path and impacts, including storm surge.</p>
- </div>
+	<div>
+	  <img src="http://openweathermap.org/img/w/01d.png"/>
+	  <img src="http://openweathermap.org/img/w/02d.png"/>
+	  <img src="http://openweathermap.org/img/w/03d.png"/>
+	  <img src="http://openweathermap.org/img/w/04d.png"/>
+	  <img src="http://openweathermap.org/img/w/09d.png"/>
+	  <img src="http://openweathermap.org/img/w/10d.png"/>
+	  <img src="http://openweathermap.org/img/w/11d.png"/>
+	  <img src="http://openweathermap.org/img/w/13d.png"/>
+	  <img src="http://openweathermap.org/img/w/50d.png"/>
+	</div>	
+	
+    <div>
+	  <img src="http://openweathermap.org/img/w/01n.png"/>
+	  <img src="http://openweathermap.org/img/w/02n.png"/>
+	  <img src="http://openweathermap.org/img/w/03n.png"/>
+	  <img src="http://openweathermap.org/img/w/04n.png"/>
+	  <img src="http://openweathermap.org/img/w/09n.png"/>
+	  <img src="http://openweathermap.org/img/w/10n.png"/>
+	  <img src="http://openweathermap.org/img/w/11n.png"/>
+	  <img src="http://openweathermap.org/img/w/13n.png"/>
+	  <img src="http://openweathermap.org/img/w/50n.png"/>
+	</div>
+	
+	<div>
+	  <p>Lviv</p>
+	  <ul id="weather_Lviv"></ul>
+	  <p>Odessa</p>
+	  <ul id="weather_Odessa"></ul>
+	  <p>Donetsk</p>
+	  <ul id="weather_Donetsk"></ul>	
+	  <p>Kharkiv</p>
+	  <div id="weather_Kharkiv"></div>
+	  <span id="Clouds_Type"></span>
+	  <p>Kiev</p>
+	  <ul id="weather_Kiev"></ul>	
+	  <p>Ternopil</p>
+	  <ul id="weather_Ternopil"></ul>	
+	  <p>Lutsk</p>
+	  <ul id="weather_Lutsk"></ul>
+	</div>
+</section>
+
+<section class="row_2">
+  <div class="column-one">
+  <h3>Latest news</h3>
+    <p>On the last day of summer, August 31, the first day of autumn, September 1, the majority rule in Ukraine heat. In particular, September 1, daily temperature will reach 32-36 degrees. 31 August rainfall is not expected, cloudy throughout the country. In western Ukraine, the temperature will be 31-37 degrees Celsius. In the north - 26-28 degrees, in the east - 25-29 degrees in the south - 30-33 degrees, in the center - 28-31 degrees Celsius. Read also: Ukraine goes to another temperature record.</p>
+    <p>September 1 is also hot, but rain provided in Zhytomyr, Poltava, Chernihiv and Kyiv. In particular, in the western part of Ukraine during the day and temperatures will reach 33-36 degrees Celsius. In the northern areas - 27-33, in Chernihiv region - 25-27 degrees, in central - 31-36, in the east - 25-29 °C. In the south in the afternoon - 28-36 degrees Celsius. In Kiev, the temperature will be 32-34 degrees Celsius, forecast rain.</p>
+    <p>Weather forecasters predict in Ukraine 1 September in the northern, eastern regions and in Poltava day, and 2 September and in western regions places a small rain, possible thunder, the rest of the rain. Wind variable directions, 3-8 m/s. Recall, August 10 meteorologists Central Geophysical Observatory after 15 hours of recorded temperature of 34.7 degrees, 0.5 degrees higher than in previous maximum values for this day, which was recorded in 1931.</p>
+  </div>
  
  <div class="column-two">
  <h3>Our locations abroad</h3>
-   <ul class="fa-ul">
-     <li><i class="fa-li fa fa-check-square"></i><strong>WU - UK</strong><br />
+   <p>We would like to share good news with you. We have opened 4 new offices. Now, our representation is abroad. This goal has been accomplished with a great efforts and hard work. You may contact our colleagues abroad, if you have any questions.</p>
+     <ul class="fa-ul">
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - UK</strong><br />
 London, st. Saint James Park 337,<br /> Tel: +44-236-544-1478</li><br />
-     <li><i class="fa-li fa fa-check-square"></i><strong>WU - Germany</strong><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Germany</strong><br />
 Berlin, Kurfürstendamm-Str. 56,<br /> Tel: +49-169-58-74-007</li><br />
-     <li><i class="fa-li fa fa-check-square"></i><strong>WU - Poland</strong><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Poland</strong><br />
 Warsaw, st. Piekna 68,<br /> Tel. +48-58-126-2833</li><br />
-     <li><i class="fa-li fa fa-check-square"></i><strong>WU - Russia</strong><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Russia</strong><br />
 Moscow, st. Viktorenko 34/11,<br /> Tel: +7-495-321-45-69</li><br />
    </ul>
   </div>
- </div>
-</div>
+ </section>
+</div><!--end of container-->
 
 <footer class="clear">
   <div class="footer-row">
@@ -84,7 +133,7 @@ Moscow, st. Viktorenko 34/11,<br /> Tel: +7-495-321-45-69</li><br />
   	</div>
   	
   	<div class="column-five">
-  	<h3>Photo gallery</h3> 
+  	<h3>Photo stream</h3> 
   	  <ul class="thumbnails">
   	  	<li><a href="#"><img src="images/th01.jpg" width="50" height="50" alt="pic_1"/></a></li>
   	  	<li><a href="#"><img src="images/th02.jpg" width="50" height="50" alt="pic_2"/></a></li>

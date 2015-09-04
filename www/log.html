@@ -4,14 +4,14 @@
 	<title>Weather Ukraine</title>
 	<meta charset="utf-8"/>
 	<link rel="shortcut icon" href="images/logo_image.png" type="image/x-icon">
-	<link rel="stylesheet" href="css-files/styles_2.css"/>	
-	<link rel="stylesheet" href="css-files/normalize.css"/>
+	<link rel="stylesheet" href="css-files/styles_3.css">	
+	<link rel="stylesheet" href="css-files/normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
 	<script src="js-files/jquery-1.11.3.min.js"></script>
 	<script src="js-files/site.js"></script>
 </head>
 <body>
-<div class="container">
+  <div class="container">
 <header>
   <div class="logo">
   	<h2>WU</h2>
@@ -47,18 +47,55 @@
   </nav>
 </header>
 
-<section class="row">	
+<section class="row">
   <div class="column-one">
-  	<h3>About Weather Ukraine</h3>
+    <h3>Fill down the form below to log in</h3>
   </div>
   
   <div class="column-two">
-  	<p>Our mission - provide weather, water, and climate data, forecasts and warnings for the protection of life and property and enhancement of the national economy.</p>
-	<p>Our vision - a weather-ready nation: society is prepared for and responds to weather-dependent events.</p>
-	<p>Our history - explore various milestones in the history of the National Weather Service and our predecessor agencies, dating back to the 1992s, on our interactive timeline.</p>
-	<p>Organization - the headquarters of the national weather service is located in Kiyv, with regional headquarters located in Lviv, Kharkiv, Donetsk, Poltava, Ternopil, Dnipropetrovsk, Lugansk, Odessa. With some 5,000 employees in 122 weather forecast offices, 13 river forecast centers, 9 national centers, and other support offices around the country, WU provides a national infrastructure to gather and process data worldwide.  Each year, WU collects some 76 billion observations and issues approximately 1.5 million forecasts and 50,000 warnings.</p>
-	<p>In 2011, WU unveiled its new strategic plan, based on the concept of building a weather-ready nation. This strategic plan is our effort to anticipate service needs over the next couple of decades, project what science and technology could allow, and establish meaningful outcome-oriented goals and objectives as we seek to build a weather-ready nation.</p>  	
-  </div>
+    <form action="script.php" method="post" name="form_2">
+      
+     <fieldset>
+      <legend>Your personal data</legend> 	
+      <p><label>First name:</label>
+      <input type="text" name="FirstName" required/></p>
+      
+      <p><label>Last name:</label>
+      <input type="text" name="LastName" required/></p>
+     
+      <p><label>E-mail:</label>
+      <input type="email" name="email" required/></p>
+
+      <p><label>Password:</label>
+      <input type="password" name="password" required/></p>
+
+      <p><label>What is your sex type?</label><br/>
+      <input type="radio" name="sex" value="male" checked> Male
+      <input type="radio" name="sex" value="female"> Female
+      </p>
+      
+      <p><label>If you have any information, please leave your comments below</label><br />
+      <textarea name="message" rows="15" cols="60"></textarea></p>
+
+      <p><label>Choose your popular ukrainian website:</label> 
+      <select name="weather_sites">
+	    <option value="site_1">Gismeteo</option>
+	    <option value="site_2">Sinoptik</option>
+	    <option value="site_3">Opogode</option>
+	    <option value="site_4">Foreca</option>
+      </select></p>
+      
+      <p><label>What is your favourite season of the year?</label><br />
+        <input type="checkbox" name="summer" value="summer"> I prefer summer.<br />
+        <input type="checkbox" name="autumn" value="autumn"> I prefer autumn.<br />
+        <input type="checkbox" name="winter" value="winter"> I prefer winter.<br />
+        <input type="checkbox" name="spring" value="spring"> I prefer spring.<br />
+      </p>
+
+      <p><input type="submit" value="Send!"/></p> 
+    </fieldset> 	
+  </form>
+ </div>
 </section>
 
 </div><!--end of container-->
@@ -89,6 +126,5 @@
   <div class="copyright clear">&copy;copyright 2015. Weather Ukraine. All rights reserved.</div>
   
 </footer>
-
 </body>
 </html>
