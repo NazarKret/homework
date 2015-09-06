@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Ukraine</title>
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="images/logo_image.png" type="image/x-icon">
+	<link rel="stylesheet" href="css-files/styles_1.css">	
+	<link rel="stylesheet" href="css-files/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+	<script src="js-files/jquery-1.11.3.min.js"></script>
+	<script src="js-files/site.js"></script>
+	<script src="js-files/my_scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+<header>
+  <div class="logo">
+  	<h2>WU</h2>
+  	<h3>Weather Ukraine</h3>
+  </div>
+  
+  <div class="social">
+  <p>Social networks</p>
+  	<ul>
+  	  <li><a href="https://uk-ua.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+  	  <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+  	  <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+  	  <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+  	</ul>
+  </div>
+  
+  <nav class="clear">
+  	<ul class="main-nav">
+  	  <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+  	  <li><a href="#"><i class="fa fa-archive"></i> Archive</a>
+  	  	<ul class="dropdown">
+   	  	  <li><a href="videos.html"><i class="fa fa-television"></i> Videos</a></li>	
+  	  	</ul>
+  	  </li>
+  	  <li><a href="log.html"><i class="fa fa-hand-o-right"></i> Join</a></li>
+  	  <li><a href="about_us.html"><i class="fa fa-users"></i> About us</a></li>
+  	</ul>
+  	
+  	<form>
+  	  <div class="search"><input type="text" placeholder="search"/> <a href="#"><i class="fa fa-search"></i></a></div>
+  	</form>
+  </nav>
+</header>
+
+ 
+
+<section class="row_1">
+  <div class="header">
+  	<h3>Weather in your city</h3>
+  </div>
+  
+  <div class="form">
+  	<form>
+ <select name="cities" id="cities" onChange="Selected(this)">
+	    <option value="city_1" selected="selected">Lviv</option>
+	    <option value="city_2">Odessa</option>
+	    <option value="city_3">Donetsk</option>
+	    <option value="city_4">Kharkiv</option>
+	    <option value="city_5">Kyiv</option>
+	    <option value="city_6">Ternopil</option>
+	    <option value="city_7">Lutsk</option>
+      </select>
+  	</form>
+  </div>
+
+  <div class="weather">
+  <table id="Lviv" style="display: block;">
+    <tr>
+      <td><h3>Lviv</h3></td>
+	  <td><ul id="weather_Lviv"></ul></td>
+	  <td>
+	    <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Lviv"></span></div>
+	  </td>
+	</tr>
+  </table>
+  
+  <table id="Odessa" style="display: none;">
+    <tr>
+	  <td><h3>Odessa</h3></td>
+	  <td><ul id="weather_Odessa"></ul></td>
+	  <td>
+	    <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Odessa"></span></div>
+	  </td>
+	</tr>
+  </table>
+  
+  <table id="Donetsk" style="display: none;">
+    <tr>
+	  <td><h3>Donetsk</h3></td>
+	  <td><ul id="weather_Donetsk"></ul></td>
+	  <td>
+        <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Donetsk"></span></div>
+	  </td>
+	</tr>
+  </table>
+  
+  <table id="Kharkiv" style="display: none;">
+    <tr>	
+	  <td><h3>Kharkiv</h3></td>
+	  <td><ul id="weather_Kharkiv"></ul></td>
+	  <td>
+        <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Kharkiv"></span></div>
+      </td>
+	</tr>
+  </table>
+  
+  <table id="Kyiv" style="display: none;">
+    <tr>
+	  <td><h3>Kyiv</h3></td>
+	  <td><ul id="weather_Kyiv"></ul></td>
+	  <td>
+	    <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Kyiv"></span></div>
+	  </td>
+    </tr>
+  </table>
+  
+  <table id="Ternopil" style="display: none;">
+    <tr>	
+	  <td><h3>Ternopil</h3></td>
+	  <td><ul id="weather_Ternopil"></ul></td>
+	  <td>
+	    <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Ternopil"></span></div>
+	  </td>
+	</tr>
+  </table>
+  
+  <table id="Lutsk" style="display: none;">
+    <tr>	
+	  <td><h3>Lutsk</h3></td>
+	  <td><ul id="weather_Lutsk"></ul></td>
+	  <td>
+	    <div class="weather-icons"><img src="images/temperature.png" width="40" height="40" alt="thermometer_image"/><br />
+	    <img src="images/strong-wind-512-000000.png" width="40" height="40" alt="wind_image"/><br />
+	    <span id="Clouds_Lutsk"></span></div>
+	  </td>
+	</tr>
+  </table>
+  </div>
+</section>
+
+<section class="row_2">
+  <div class="column-one">
+  <h3>Latest news</h3>
+    <p>On the last day of summer, August 31, the first day of autumn, September 1, the majority rule in Ukraine heat. In particular, September 1, daily temperature will reach 32-36 degrees. 31 August rainfall is not expected, cloudy throughout the country. In western Ukraine, the temperature will be 31-37 degrees Celsius. In the north - 26-28 degrees, in the east - 25-29 degrees in the south - 30-33 degrees, in the center - 28-31 degrees Celsius. Read also: Ukraine goes to another temperature record.</p>
+    <p>September 1 is also hot, but rain provided in Zhytomyr, Poltava, Chernihiv and Kyiv. In particular, in the western part of Ukraine during the day and temperatures will reach 33-36 degrees Celsius. In the northern areas - 27-33, in Chernihiv region - 25-27 degrees, in central - 31-36, in the east - 25-29 °C. In the south in the afternoon - 28-36 degrees Celsius. In Kiev, the temperature will be 32-34 degrees Celsius, forecast rain.</p>
+    <p>Weather forecasters predict in Ukraine 1 September in the northern, eastern regions and in Poltava day, and 2 September and in western regions places a small rain, possible thunder, the rest of the rain. Wind variable directions, 3-8 m/s. Recall, August 10 meteorologists Central Geophysical Observatory after 15 hours of recorded temperature of 34.7 degrees, 0.5 degrees higher than in previous maximum values for this day, which was recorded in 1931.</p>
+  </div>
+ 
+ <div class="column-two">
+ <h3>Our locations abroad</h3>
+   <p>We would like to share good news with you. We have opened 4 new offices. Now, our representation is abroad. This goal has been accomplished with a great efforts and hard work. You may contact our colleagues abroad, if you have any questions.</p>
+     <ul class="fa-ul">
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - UK</strong><br />
+London, st. Saint James Park 337,<br /> Tel: +44-236-544-1478</li><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Germany</strong><br />
+Berlin, Kurfürstendamm-Str. 56,<br /> Tel: +49-169-58-74-007</li><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Poland</strong><br />
+Warsaw, st. Piekna 68,<br /> Tel. +48-58-126-2833</li><br />
+       <li><i class="fa-li fa fa-check-square"></i><strong>WU - Russia</strong><br />
+Moscow, st. Viktorenko 34/11,<br /> Tel: +7-495-321-45-69</li><br />
+   </ul>
+  </div>
+ </section>
+</div><!--end of container-->
+
+<footer class="clear">
+  <div class="footer-row">
+  	<div class="column-four">
+  	<h3>Contact us</h3>
+  	  <p><i class="fa fa-map-marker"></i> Ukraine, st.Shevchenko 67</p>
+  	  <p><i class="fa fa-envelope"></i> weather_ukraine@vikk.com.ua</p>
+  	  <p><i class="fa fa-phone"></i> Tel: +380322402929</p>
+  	  <p><i class="fa fa-mobile"></i> Mob: +380939162646</p>
+  	</div>
+  	
+  	<div class="column-five">
+  	<h3>Photo stream</h3> 
+  	  <ul class="thumbnails">
+  	  	<li><a href="#"><img src="images/th01.jpg" width="50" height="50" alt="pic_1"/></a></li>
+  	  	<li><a href="#"><img src="images/th02.jpg" width="50" height="50" alt="pic_2"/></a></li>
+  	  	<li><a href="#"><img src="images/th03.jpg" width="50" height="50" alt="pic_3"/></a></li>
+  	  	<li><a href="#"><img src="images/th04.jpg" width="50" height="50" alt="pic_4"/></a></li>
+  	  	<li><a href="#"><img src="images/th05.jpg" width="50" height="50" alt="pic_5"/></a></li>
+  	  	<li><a href="#"><img src="images/th06.jpg" width="50" height="50" alt="pic_6"/></a></li>
+  	  </ul>	
+  	</div>
+  </div>
+  
+  <div class="copyright clear">&copy;copyright 2015. Weather Ukraine. All rights reserved.</div>
+  
+</footer>
+</body>
+</html>

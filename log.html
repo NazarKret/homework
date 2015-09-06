@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Ukraine</title>
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="images/logo_image.png" type="image/x-icon">
+	<link rel="stylesheet" href="css-files/styles_3.css">	
+	<link rel="stylesheet" href="css-files/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+	<script src="js-files/jquery-1.11.3.min.js"></script>
+	<script src="js-files/site.js"></script>
+</head>
+<body>
+  <div class="container">
+<header>
+  <div class="logo">
+  	<h2>WU</h2>
+  	<h3>Weather Ukraine</h3>
+  </div>
+  
+  <div class="social">
+  <p>Social networks</p>
+  	<ul>
+  	  <li><a href="https://uk-ua.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+  	  <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+  	  <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+  	  <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+  	</ul>
+  </div>
+  
+  <nav class="clear">
+  	<ul class="main-nav">
+  	  <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+  	  <li><a href="#"><i class="fa fa-archive"></i> Archive</a>
+  	  	<ul class="dropdown">
+   	  	  <li><a href="videos.html"><i class="fa fa-television"></i> Videos</a></li>	
+  	  	</ul>
+  	  </li>
+  	  <li><a href="log.html"><i class="fa fa-hand-o-right"></i> Join</a></li>
+  	  <li><a href="about_us.html"><i class="fa fa-users"></i> About us</a></li>
+  	</ul>
+  	
+  	<form>
+  	  <div class="search"><input type="text" placeholder="search"/> <a href="#"><i class="fa fa-search"></i></a></div>
+  	</form>
+  </nav>
+</header>
+
+<section class="row">
+  <div class="column-one">
+    <h3>Fill down the form below to log in</h3>
+  </div>
+  
+  <div class="column-two">
+    <form action="script.php" method="post" name="form_2">
+      
+     <fieldset>
+      <legend>Your personal data</legend> 	
+      <p><label>First name:</label>
+      <input type="text" name="FirstName" required/></p>
+      
+      <p><label>Last name:</label>
+      <input type="text" name="LastName" required/></p>
+     
+      <p><label>E-mail:</label>
+      <input type="email" name="email" required/></p>
+
+      <p><label>Password:</label>
+      <input type="password" name="password" required/></p>
+
+      <p><label>What is your sex type?</label><br/>
+      <input type="radio" name="sex" value="male" checked> Male
+      <input type="radio" name="sex" value="female"> Female
+      </p>
+      
+      <p><label>If you have any information, please leave your comments below</label><br />
+      <textarea name="message" rows="15" cols="60"></textarea></p>
+
+      <p><label>Choose your popular ukrainian website:</label> 
+      <select name="weather_sites">
+	    <option value="site_1">Gismeteo</option>
+	    <option value="site_2">Sinoptik</option>
+	    <option value="site_3">Opogode</option>
+	    <option value="site_4">Foreca</option>
+      </select></p>
+      
+      <p><label>What is your favourite season of the year?</label><br />
+        <input type="checkbox" name="summer" value="summer"> I prefer summer.<br />
+        <input type="checkbox" name="autumn" value="autumn"> I prefer autumn.<br />
+        <input type="checkbox" name="winter" value="winter"> I prefer winter.<br />
+        <input type="checkbox" name="spring" value="spring"> I prefer spring.<br />
+      </p>
+
+      <p><input type="submit" value="Send!"/></p> 
+    </fieldset> 	
+  </form>
+ </div>
+</section>
+
+</div><!--end of container-->
+
+<footer class="clear">
+  <div class="footer-row">
+  	<div class="column-four">
+  	<h3>Contact us</h3>
+  	  <p><i class="fa fa-map-marker"></i> Ukraine, st.Shevchenko 67</p>
+  	  <p><i class="fa fa-envelope"></i> weather_ukraine@vikk.com.ua</p>
+  	  <p><i class="fa fa-phone"></i> Tel: +380322402929</p>
+  	  <p><i class="fa fa-mobile"></i> Mob: +380939162646</p>
+  	</div>
+  	
+  	<div class="column-five">
+  	<h3>Photo stream</h3> 
+  	  <ul class="thumbnails">
+  	  	<li><a href="#"><img src="images/th01.jpg" width="50" height="50" alt="pic_1"/></a></li>
+  	  	<li><a href="#"><img src="images/th02.jpg" width="50" height="50" alt="pic_2"/></a></li>
+  	  	<li><a href="#"><img src="images/th03.jpg" width="50" height="50" alt="pic_3"/></a></li>
+  	  	<li><a href="#"><img src="images/th04.jpg" width="50" height="50" alt="pic_4"/></a></li>
+  	  	<li><a href="#"><img src="images/th05.jpg" width="50" height="50" alt="pic_5"/></a></li>
+  	  	<li><a href="#"><img src="images/th06.jpg" width="50" height="50" alt="pic_6"/></a></li>
+  	  </ul>	
+  	</div>
+  </div>
+  
+  <div class="copyright clear">&copy;copyright 2015. Weather Ukraine. All rights reserved.</div>
+  
+</footer>
+</body>
+</html>
